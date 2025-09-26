@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inventario de Limpieza</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="index.html" class="boton-volver">← Volver al menú</a>
+    <h1>Inventario de Limpieza</h1>
+    <p>Gestiona los productos de limpieza disponibles en el almacén.</p>
+  </header>
+
+  <main>
+    <form id="formulario">
+      <input type="number" id="id" placeholder="ID (solo para consultar, editar o eliminar)">
+      <input type="text" id="descripcion" placeholder="Descripción" required>
+
+      <select id="udm" required>
+        <option value="">Seleccionar UDM</option>
+        <option value="Atol">Atol</option>
+        <option value="Bolsa">Bolsa</option>
+        <option value="Bolsas">Bolsas</option>
+        <option value="Bolsita">Bolsita</option>
+        <option value="Bote">Bote</option>
+        <option value="Botella">Botella</option>
+        <option value="Caja">Caja</option>
+        <option value="Frasco">Frasco</option>
+        <option value="Galon">Galon</option>
+        <option value="gramos">gramos</option>
+        <option value="Lata">Lata</option>
+        <option value="Libra">Libra</option>
+        <option value="Libras">Libras</option>
+        <option value="Litro">Litro</option>
+        <option value="Litros">Litros</option>
+        <option value="Manojo">Manojo</option>
+        <option value="paquete">paquete</option>
+        <option value="paquetes">paquetes</option>
+        <option value="rollos">rollos</option>
+        <option value="sobre">sobre</option>
+        <option value="Unidad">Unidad</option>
+        <option value="unidad">unidad</option>
+        <option value="unitario">unitario</option>
+        <option value="unidades">unidades</option>
+      </select>
+
+
+      <select id="almacen" required>
+        <option value="">Seleccionar almacén</option>
+        <option value="Almacén 1">Almacén 1</option>
+      </select>
+
+      <input type="number" id="stock" placeholder="Stock mínimo" required>
+      <input type="number" id="inventario" placeholder="Inventario actual" required>
+
+      <select id="solicitar" required>
+        <option value="">Seleccionar estado</option>
+        <option value="hay suficiente">hay suficiente</option>
+        <option value="solicitar material">solicitar material</option>
+      </select>
+
+      <div class="botones">
+        <button type="submit">Agregar</button>
+        <button type="button" onclick="consultarPorID()">Consultar por ID</button>
+        <button type="button" onclick="actualizar()">Actualizar</button>
+        <button type="button" onclick="eliminar()">Eliminar</button>
+      </div>
+    </form>
+
+    <table id="tabla">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Descripción</th>
+          <th>U/M</th>
+          <th>Categoría</th>
+          <th>Almacén</th>
+          <th>Stock</th>
+          <th>Inventario</th>
+          <th>Solicitar</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Fundación ANINI. Todos los derechos reservados.</p>
+  </footer>
+
+  <script type="module" src="firebase-config.js"></script>
+  <script type="module" src="script-limpieza.js"></script>
+</body>
+</html>

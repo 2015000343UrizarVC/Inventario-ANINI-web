@@ -1,0 +1,44 @@
+🧾 Manual de Usuario – Sistema Web de Inventario ANINI
+🟢 ¿Qué es este sistema?
+Este sistema permite gestionar los inventarios de alimentos y productos de limpieza de forma rápida, segura y accesible desde cualquier navegador. Está conectado a Firebase, por lo que los datos se guardan automáticamente en la nube.
+
+🖥️ ¿Cómo abrir el sistema?
+- Descargue la carpeta comprimida del sistema desde el enlace proporcionado.
+- Extraiga el contenido en su computadora (clic derecho → “Extraer todo”).
+- Abra la carpeta y haga doble clic en el archivo index.html.
+- El sistema se abrirá en su navegador (Chrome, Edge o Firefox recomendado).
+
+📋 ¿Qué módulos contiene?
+- Inventario de Alimentos
+Para registrar y consultar productos alimenticios.
+- Inventario de Limpieza
+Para registrar y consultar productos de limpieza.
+Cada módulo tiene su propia pantalla y base de datos, accesibles desde el menú principal.
+
+🧑‍💻 ¿Cómo usar cada módulo?
+➕ Agregar producto
+- Complete los campos del formulario.
+- Presione el botón “Agregar”.
+- El producto se guardará automáticamente en la base de datos.
+🔍 Consultar por ID
+- Ingrese el ID del producto.
+- Presione “Consultar por ID”.
+- El sistema mostrará los datos del producto.
+✏️ Actualizar producto
+- Consulte el producto por ID.
+- Modifique los campos necesarios.
+- Presione “Actualizar”.
+🗑️ Eliminar producto
+- Ingrese el ID del producto.
+- Presione “Eliminar”.
+
+📊 ¿Dónde se guardan los datos?
+Los datos se almacenan en Firebase, una plataforma segura en la nube. No se necesita instalar ningún programa adicional.
+
+⚠️ Recomendaciones
+- Use navegadores modernos como Chrome o Edge.
+- No cierre la pestaña mientras agrega o actualiza datos.
+- Verifique que todos los campos estén completos antes de guardar.
+- Si aparece un error, revise que el ID ingresado sea correcto y que los campos estén bien escritos.
+
+
